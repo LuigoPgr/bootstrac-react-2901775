@@ -18,3 +18,6 @@ MixArt Studio es un MOOC que se centra en enseñar a los jóvenes diversas técn
  - Santiago Jaramillo Cardona
  - Juan Andrés Quiroz Montoya
  - Andrés Felipe Monterroza Mercado
+
+## Posdata:
+En el código hay un video que github no me dejó subir
