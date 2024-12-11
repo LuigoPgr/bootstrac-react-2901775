@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout de Videos y Textos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .seccion {
+            display: flex;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        .contenido {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .video {
+            flex: 1;
+        }
+        .video video {
+            max-width: 100%;
+            height: auto;
+        }
+        .navbar-expand-lg-navbar-dark-bg-dark{
+            background-color: #6D65C8;
+        }
+        .logo{
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+        }
+        
+        /* Primer bloque */
+        .seccion-1 {
+            flex-direction: row-reverse;
+        }
+        
+        /* Segundo bloque */
+        .seccion-2 {
+            flex-direction: row;
+        }
+        
+        /* Tercer bloque */
+        .seccion-3 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .seccion-3 .contenido {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg-navbar-dark-bg-dark">
+        <div class="container">
+            <div class="logo">
+                <img src="Img/Original.png" style="width: 100px; height=120px;" alt="imagen unica"> 
+            </div>
+        </div>
+    </nav>
+    <!-- Primer Bloque -->
+    <div class="seccion seccion-2">
+        <div class="contenido">
+            <h2>Contextualización de las artes mixtas</h2>
+            <p>Las artes mixtas fusionan disciplinas como pintura, música, escultura y literatura, desafiando las reglas tradicionales para crear obras innovadoras y sensoriales. Utilizando una amplia variedad de materiales y técnicas, este arte invita a reflexionar y experimentar emociones a través de instalaciones inmersivas y narrativas únicas. Un universo donde la creatividad no tiene límites y la imaginación es la protagonista.</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="Video/MixArt Studio Animación.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+
+    <!-- Segundo Bloque -->
+    <div class="seccion seccion-2">
+        <div class="video">
+            <video controls>
+                <source src="Video/MixArt Studio Animación.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+        <div class="contenido">
+            <h2>Definición de artes mixtas y sus principales caracteristicas</h2>
+            <p>Las técnicas de artes mixtas son una expresión artística libre y creativa que combina diversos materiales, como pinturas, telas y objetos cotidianos, para crear obras únicas y llenas de significado. Sin reglas fijas, invitan a explorar la imaginación y contar historias a través de composiciones originales que transforman lo común en algo extraordinario.</p>
+        </div>
+    </div>
+
+    <!-- Tercer Bloque -->
+    <div class="seccion seccion-2">
+        <div class="contenido">
+            <h2>Definición de artes mixtas y sus principales caracteristicas</h2>
+            <p>Las técnicas de artes mixtas son una expresión artística libre y creativa que combina diversos materiales, como pinturas, telas y objetos cotidianos, para crear obras únicas y llenas de significado. Sin reglas fijas, invitan a explorar la imaginación y contar historias a través de composiciones originales que transforman lo común en algo extraordinario.</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="Video/MixArt Studio Animación.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+</body>
+</html>

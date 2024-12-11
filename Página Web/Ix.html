@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Técnicas de Artes Mixtas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .course-module {
+            transition: transform 0.3s ease;
+        }
+        .course-module:hover {
+            transform: scale(1.05);
+        }
+        .bg-custom {
+            background-color: #c1c1c1;
+        }
+        .navbar-expand-lg-navbar-dark-bg-dark{
+            background-color: #6D65C8;
+        }
+        .container-mt-5{
+            background-color: #c1c1c1;
+        }
+        .logo{
+            display: block;
+            margin: 0 auto;
+        }
+        .form-section {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            max-width: 90%;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg-navbar-dark-bg-dark">
+        <div class="container">
+            <div class="logo">
+                <img src="Img/Original.png" style="width: 100px; height=120px;" alt="imagen unica"> 
+                <hr>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light me-2" onclick="showRegisterForm()">Register</button>
+                <button class="btn btn-outline-light" onclick="showLoginForm()">Log In</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-mt-5">
+        <h1 class="text-center mb-4">Video De Introducción</h1>
+        <video controls class="logo">
+            <source src="Video/MixArt Studio Animación.mp4" style="width: 280px; height: 158px; display: flex;" >
+        </video>
+        <h1 class="text-center mb-4">Módulos</h1>
+        
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Habitación ilustrada.png" class="card-img-top" alt="Módulo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducción a Artes Mixtas</h5>
+                        <p class="card-text">Exploración creativa que combina técnicas, materiales y disciplinas artísticas.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Bellas Artes Ilustrado.png" class="card-img-top" alt="Módulo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentos de composición y diseño</h5>
+                        <p class="card-text">Principios básicos para crear diseños visuales equilibrados y atractivos.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Parque ilustrado.png" class="card-img-top" alt="Módulo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Técnicas de collage y montaje</h5>
+                        <p class="card-text">Métodos creativos que combinan imágenes, materiales y texturas visuales.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Sala ilustrada.png" class="card-img-top" alt="Módulo 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pintura mixta</h5>
+                        <p class="card-text">Combinación de técnicas y materiales diversos en una obra artística.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Carretera ilustrada.png" class="card-img-top" alt="Módulo 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Incorporación de elementos tridimensionales</h5>
+                        <p class="card-text">Añadir objetos con profundidad, volumen y perspectiva en diseños visuales.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card course-module shadow-sm">
+                    <img src="Img/Montaña Ilustrada.png" class="card-img-top" alt="Módulo 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Técnicas de transferencia y estampado</h5>
+                        <p class="card-text">Métodos creativos para imprimir imágenes o diseños sobre superficies.</p>
+                        <a href="Módulos.html" class="btn btn-primary">Iniciar Módulo…
+
+    <!-- Existing content remains the same -->
+    <div class="container-mt-5">
+        <!-- ... (previous course modules content) ... -->
+    </div>
+
+    <!-- Register Form Section -->
+    <div id="registerForm" class="form-section">
+        <div class="form-container">
+            <button class="btn btn-dark close-btn" onclick="hideRegisterForm()">X</button>
+            <h2 class="text-center mb-4">Register</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="registerName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="registerName" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="registerEmail" class="form-label">Gmail</label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="registerPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form Section -->
+    <div id="loginForm" class="form-section">
+        <div class="form-container">
+            <button class="btn btn-dark close-btn" onclick="hideLoginForm()">X</button>
+            <h2 class="text-center mb-4">Log In</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Gmail</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark-text-white-text-center-py-3 mt-5" style="background-color: #6D65C8;">
+        <div class="container" style="background-color: #6D65C8;">
+            <p>&copy; 2024 MixArt Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function showRegisterForm() {
+            document.getElementById('registerForm').style.display = 'flex';
+        }
+
+        function hideRegisterForm() {
+            document.getElementById('registerForm').style.display = 'none';
+        }
+
+        function showLoginForm() {
+            document.getElementById('loginForm').style.display = 'flex';
+        }
+
+        function hideLoginForm() {
+            document.getElementById('loginForm').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
