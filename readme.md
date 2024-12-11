@@ -4,7 +4,7 @@ MixArt Studio es un MOOC que se centra en enseñar a los jóvenes diversas técn
 ## Mockups de MixArt Studio
 - <a href="https://github.com/user-attachments/assets/1871e533-d50e-44a1-8ec6-414799f22df7">Inicio</a>
 - <a href="https://github.com/user-attachments/assets/9d661f60-fbb6-4f01-90d8-88ed11d5ca7a">Registro</a>
-- <a href="">Módulos</a>
+- <a href="https://github.com/user-attachments/assets/c14cd1da-3bc0-47c8-bcc7-c31cccd1ebe1">Módulos</a>
 
 ## Desarrollado Con:
 - HTML y CSS
